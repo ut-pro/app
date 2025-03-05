@@ -52,7 +52,9 @@ app.delete("/delete/:id", async (req, res) => {
 
 app.listen(3000, async () => {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/shesha");
+    await mongoose.connect(
+      "mongodb+srv://ut-pro:ut-pro@cluster0.vefqv.mongodb.net/shesha"
+    );
     console.log("database connected");
     console.log("server is running at 3000");
   } catch (error) {
