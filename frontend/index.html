@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-div">
+      <form id="user-form">
+        <label for="name">Name:</label>
+        <input id="name" type="text" required />
+        <label for="age">Age:</label>
+        <input id="age" type="number" required />
+        <label for="city">City:</label>
+        <input id="city" type="text" required />
+        <p id="error-message" style="color: red"></p>
+      </form>
+      <button id="submit">Add</button>
+      <button id="show">List</button>
+    </div>
+
+    <div class="user-container"></div>
+  </body>
+  <script src="scripts.js"></script>
+</html>

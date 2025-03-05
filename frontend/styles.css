@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-div {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+label,
+input {
+  display: block;
+  margin-top: 10px;
+}
+
+#submit {
+  cursor: pointer;
+}
+
+.card {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+}
