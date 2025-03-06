@@ -18,7 +18,7 @@ submit.addEventListener("click", async (event) => {
   const user = { name, age, city };
 
   try {
-    const response = await fetch("http://localhost:3000/create", {
+    const response = await fetch("https://app-tnfc.onrender.com/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,7 +41,7 @@ show.addEventListener("click", showData);
 
 async function showData() {
   try {
-    const response = await fetch("http://localhost:3000/show");
+    const response = await fetch("https://app-tnfc.onrender.com/show");
     if (!response.ok) {
       throw new Error("Failed to fetch users");
     }
@@ -73,7 +73,7 @@ async function showData() {
 }
 
 function Delete(id) {
-  fetch(`http://localhost:3000/delete/${id}`, {
+  fetch(`https://app-tnfc.onrender.com/delete/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
