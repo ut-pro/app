@@ -12,7 +12,7 @@ app.use(cors());
 app.post("/create", async (req, res) => {
   try {
     const user = req.body;
-    if (!user || /^[a-zA-Z ]+$/.test(user.name) || user.age === Number) {
+    if (!user) {
       return res.status(400).send("Invalid user data");
     }
     await User.create(user);
